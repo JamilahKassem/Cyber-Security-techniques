@@ -22,7 +22,7 @@
     let chart = Tree(data, {
         label: d => d.name,
         title: (d, n) => `${n.ancestors().reverse().map(d => d.data.name).join(".")}`, // hover text
-        link: (d, n) => `www.google.com`,
+        link: (d, n) => `https://www.google.co.uk/`,
         width: 1200
     });
     document.getElementById("chart").appendChild(chart);
